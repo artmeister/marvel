@@ -10,28 +10,28 @@
 
 <body>
 
-  <header class='navbar navbar-expand-lg navbar-dark bd-navbar fixed-top'>
+  <header class='navbar navbar-expand-lg fixed-top'>
     <nav class='container-xxl bd-gutter flex-wrap flex-lg-nowrap'>
+      <a class="navbar-brand p-0 m-0" href="/">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.svg" alt="Marvel">
+      </a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuHeader"
         aria-controls="menuHeader" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <a class="navbar-brand p-0 m-0" href="/">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.svg" alt="Marvel">
-      </a>
-
       <?php wp_nav_menu( [
         'theme_location'  => 'primary-menu',
         'container_id'    => 'menuHeader',
-        'container_class' => 'collapse navbar-collapse',
+        'container_class' => 'collapse navbar-collapse justify-content-end',
         'menu_class' => 'navbar-nav flex-row flex-wrap bd-navbar-nav'
       ] ); ?>
     </nav>
   </header>
 
   <main class='bd-content order-1 py-5'>
-    <div class='container-xxl bd-gutter'>
+    <div class='container-fluid bd-gutter'>
 
       <section id='hero' class='row g-lg-5 mb-5'>
         <h1 class='hero__heading'>Marvel Power Group</h1>
