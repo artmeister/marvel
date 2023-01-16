@@ -1,9 +1,0 @@
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/utilities";
-
-$utilities: map-merge($utilities,
-  ("font-family": (property: font-family,
-      class: font,
-      values: ('Alata', serif)),
-  ));
