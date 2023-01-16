@@ -47,7 +47,10 @@
       <section id='about-us' class='row g-lg-5 mb-5'>
         <h2>About Us</h2>
         <div>
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-us.png" alt="">
+          <picture>
+            <source srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/about-us.webp" type="image/webp" />
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-us.png" alt="photo" />
+          </picture>
           <p>Our dynamic, solutions-oriented team brings decades of relevant transactional, analytical and regulatory
             experience to supporting our clients’ unique agendas. We are experienced practitioners who have run
             companies, successfully originated and closed complex deals, advocated and negotiated favorable policy and
