@@ -30,7 +30,7 @@ module.exports = [
         // sass compilation
         {
           test: /\.(sass|scss)$/,
-          use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+          use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader']
         },
         // loader for webfonts (only required if loading custom fonts)
         {
@@ -46,6 +46,14 @@ module.exports = [
           type: 'asset/resource',
           generator: {
             filename: './css/build/img/[name][ext]',
+          }
+        },
+        {
+          mimetype: 'image/svg+xml',
+          scheme: 'data',
+          type: 'asset/resource',
+          generator: {
+            filename: './css/build/img/icons/[hash].svg'
           }
         },
       ]

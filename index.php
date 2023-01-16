@@ -8,38 +8,54 @@
 
 <?php include('header.php'); ?>
 
-  <body>
+<body>
 
-    <header>
-      <div>
-        <img src="/img/logo.svg" alt="Marvel">
-      </div>
+  <header class='navbar navbar-expand-lg navbar-dark bd-navbar sticky-top'>
+    <nav class='container-xxl bd-gutter flex-wrap flex-lg-nowrap'>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuHeader"
+        aria-controls="menuHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <nav>
-        <?php wp_nav_menu( [
-          'container_class' => 'menu-header',
-          'theme_location'  => 'primary'
-        ] ); ?>
-      </nav>
-    </header>
+      <a class="navbar-brand p-0 m-0" href="/">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.svg" alt="Marvel">
+      </a>
 
-    <main>
+      <?php wp_nav_menu( [
+        'theme_location'  => 'primary',
+        'container_id'    => 'menuHeader',
+        'container_class' => 'collapse navbar-collapse',
+        'menu_class' => 'navbar-nav flex-row flex-wrap bd-navbar-nav'
+      ] ); ?>
+    </nav>
+  </header>
 
-      <section id='hero' class=''>
-        <h1>Marvel Power Group</h1>
-        <p>Marvel Power Group is a boutique consulting firm with a fresh, markets-based approach to value creation. We offer services to clients in energy, water, manufacturing and transportation sectors.</p>
-        
-        <button>Contact Us</button>
+  <main class='bd-content order-1 py-5'>
+    <div class='container-xxl bd-gutter'>
 
-        <small>Scroll for more</small>
+      <section id='hero' class='row g-lg-5 mb-5'>
+        <h1 class='hero__heading'>Marvel Power Group</h1>
+        <p class='hero__text'>
+          Marvel Power Group is a boutique consulting firm with a fresh, markets-based approach to value creation. We
+          offer services to clients in energy, water, manufacturing and transportation sectors.
+        </p>
+        <button class='hero__button'>Contact Us</button>
+        <small class='hero__scroll'>Scroll for more</small>
       </section>
 
-      <!-- About Us -->
+      <section id='about-us' class='row g-lg-5 mb-5'>
+        <h2>About Us</h2>
+        <div>
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-us.png" alt="">
+          <p></p>
+        </div>
+      </section>
 
-    </main>
+    </div>
+  </main>
 
-    <?php include('footer.php'); ?>
+  <?php include('footer.php'); ?>
 
-  </body>
+</body>
 
 </html>

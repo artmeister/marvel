@@ -14,4 +14,10 @@
   }
   add_action( 'wp_enqueue_scripts', 'enqueue_webpack_scripts' );
 
+
+  function my_custom_menu() {
+    register_nav_menu('primary-menu', __( 'Верхнее меню' ));
+  }
+  add_action( 'init', 'my_custom_menu' );
+
 ?>

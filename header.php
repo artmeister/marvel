@@ -3,8 +3,7 @@
   <title><?=get_the_title()?></title>
 
   <!-- meta tag header includes -->
-  <meta name="author" content="Taylor Callsen" />
-  <meta name="description" content="<?=get_the_excerpt()?>" /> 
+  <meta name="description" content="<?=get_the_excerpt()?>" />
   <meta name="keywords" content="<?=$metaTags?>">
   <link rel="canonical" href="<?=wp_get_canonical_url()?>">
   <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico" />
