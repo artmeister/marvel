@@ -11,7 +11,7 @@
 <body>
 
   <header class='navbar navbar-expand-lg fixed-top'>
-    <nav class='container-xxl bd-gutter flex-wrap flex-lg-nowrap'>
+    <nav class='container-xxl flex-wrap flex-lg-nowrap'>
       <a class="navbar-brand p-0 m-0" href="/">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.svg" alt="Marvel">
       </a>
@@ -25,13 +25,13 @@
         'theme_location'  => 'primary-menu',
         'container_id'    => 'menuHeader',
         'container_class' => 'collapse navbar-collapse justify-content-end',
-        'menu_class' => 'navbar-nav flex-row flex-wrap bd-navbar-nav'
+        'menu_class' => 'navbar-nav flex-row flex-wrap'
       ] ); ?>
     </nav>
   </header>
 
   <main class='bd-content order-1 py-5'>
-    <div class='container-fluid bd-gutter'>
+    <div class='container-fluid'>
 
       <section id='hero' class='row g-lg-5 mb-5'>
         <h1 class='hero__heading'>Marvel Power Group</h1>
