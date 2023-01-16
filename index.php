@@ -22,32 +22,39 @@
       </a>
 
       <?php wp_nav_menu( [
-        'theme_location'  => 'primary',
+        'theme_location'  => 'primary-menu',
         'container_id'    => 'menuHeader',
         'container_class' => 'collapse navbar-collapse',
         'menu_class' => 'navbar-nav flex-row flex-wrap bd-navbar-nav'
       ] ); ?>
     </nav>
+
+    <section id='hero' class='row g-lg-5 mb-5'>
+      <h1 class='hero__heading'>Marvel Power Group</h1>
+      <p class='hero__text'>
+        Marvel Power Group is a boutique consulting firm with a fresh, markets-based approach to value creation. We
+        offer services to clients in energy, water, manufacturing and transportation sectors.
+      </p>
+      <button class='hero__button'>Contact Us</button>
+      <small class='hero__scroll'>Scroll for more</small>
+    </section>
   </header>
 
   <main class='bd-content order-1 py-5'>
     <div class='container-xxl bd-gutter'>
 
-      <section id='hero' class='row g-lg-5 mb-5'>
-        <h1 class='hero__heading'>Marvel Power Group</h1>
-        <p class='hero__text'>
-          Marvel Power Group is a boutique consulting firm with a fresh, markets-based approach to value creation. We
-          offer services to clients in energy, water, manufacturing and transportation sectors.
-        </p>
-        <button class='hero__button'>Contact Us</button>
-        <small class='hero__scroll'>Scroll for more</small>
-      </section>
-
       <section id='about-us' class='row g-lg-5 mb-5'>
         <h2>About Us</h2>
         <div>
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-us.png" alt="">
-          <p></p>
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-us.png" alt="About Us">
+          <p>Our dynamic, solutions-oriented team brings decades
+            of relevant transactional, analytical and regulatory experience to supporting our clients’ unique agendas.
+
+            We are experienced practitioners who have run companies, successfully originated and closed complex deals,
+            advocated and negotiated favorable policy and advanced technological innovation and climate leadership.
+
+            We specialize in structuring balanced solutions for all affected stakeholders and uncovering economic
+            opportunities in otherwise opaque environments.</p>
         </div>
       </section>
 
