@@ -16,9 +16,10 @@
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.svg" alt="Marvel">
       </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuHeader"
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menuHeader"
         aria-controls="menuHeader" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span> </span>
+        <span> </span>
       </button>
 
       <?php wp_nav_menu( [
