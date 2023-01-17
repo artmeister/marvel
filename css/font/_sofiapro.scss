@@ -4,7 +4,7 @@ $sofiapro-font-path: "../font/sofiapro" !default;
 @font-face {
   font-family: 'Sofia Pro';
   src: url('#{$sofiapro-font-path}/sofiapro-light.otf') format('opentype');
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
