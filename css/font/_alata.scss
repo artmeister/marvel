@@ -1,10 +1,9 @@
 $alata-font-path: "../font/alata" !default;
 
-// regular
 @font-face {
-  font-family: 'Alata';
-  src: url('#{$alata-font-path}/alata-regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+	font-family: "Alata";
+	src: url("#{$alata-font-path}/alata-regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }

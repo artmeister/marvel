@@ -1,10 +1,11 @@
 $sofiapro-font-path: "../font/sofiapro" !default;
 
-// regular
 @font-face {
-  font-family: 'Sofia Pro';
-  src: url('#{$sofiapro-font-path}/sofiapro-light.otf') format('opentype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+	font-family: "Sofia Pro";
+	src: url("#{$sofiapro-font-path}/SofiaProLight.ttf") format("truetype"),
+		url("#{$sofiapro-font-path}/SofiaProLight.woff2") format("woff2"),
+		url("#{$sofiapro-font-path}/SofiaProLight.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
 }
