@@ -1,0 +1,48 @@
+.navbar-nav {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  color: #000000;
+}
+
+#hero {
+  background: url('../img/background-hero.png?as=webp');
+}
+
+.hero__heading {
+  font-size: 115px;
+  line-height: 130px;
+
+  text-align: center;
+
+  color: $hero-text;
+}
+
+.hero__text {
+  font-size: 25px;
+  line-height: 35px;
+
+  text-align: center;
+
+  color: $hero-text;
+}
+
+.hero__button {
+  padding: 19px 40px 15px;
+  background-color: $hero-button-back;
+  color: $hero-button-color;
+}
+
+.hero__scroll {
+  font-size: 14px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.7);
+}
